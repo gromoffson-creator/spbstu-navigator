@@ -628,18 +628,19 @@ ul { list-style: none; }
 .campus-scheme-wrap {
   margin-bottom: var(--sp-10);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: #fff;
 }
 .campus-scheme-img {
   width: 100%;
   height: auto;
+  max-height: none;
+  min-height: 0;
   display: block;
-  max-height: 480px;
-  object-fit: cover;
-  object-position: center;
+  object-fit: fill;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .campus-scheme-caption {
   font-size: var(--text-xs);
